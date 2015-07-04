@@ -27,7 +27,7 @@
 #### 2.2 Or use composer command-line
    * php composer.phar require pmvc-plugin/hello_world
 
-# User parser Engine
+User parser Engine
 ======
    * http://querypath.org/
    * https://github.com/technosophos/querypath
