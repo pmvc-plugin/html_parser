@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/pmvc-plugin/html_parser/license)](https://packagist.org/packages/pmvc-plugin/html_parser)
 [![Total Downloads](https://poser.pugx.org/pmvc-plugin/html_parser/downloads)](https://packagist.org/packages/pmvc-plugin/html_parser) 
 
-# Html Parser 
+Html Parser 
 ===============
 
 ## Install with Composer
