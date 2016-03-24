@@ -27,7 +27,7 @@ Html Parser
 #### 2.2 Or use composer command-line
    * php composer.phar require pmvc-plugin/hello_world
 
-User parser Engine
+Parse Engine
 ======
    * http://querypath.org/
    * https://github.com/technosophos/querypath
