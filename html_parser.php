@@ -1,7 +1,6 @@
 <?php
 namespace PMVC\PlugIn\html_parser;
-
-// \PMVC\l(__DIR__.'/xxx.php');
+use html5qp;
 
 ${_INIT_CONFIG}[_CLASS] = __NAMESPACE__.'\html_parser';
 
@@ -15,6 +14,6 @@ class html_parser extends \PMVC\PlugIn
 
     public function css($content,$selector)
     {
-        return  \htmlqp($content,$selector,$this->opts);
+        return html5qp('<>'.$content, $selector, $this->opts);
     }
 }
