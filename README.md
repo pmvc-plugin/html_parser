@@ -16,7 +16,6 @@ $object = $plug->css($html, $your_css_$selector);
 var_dump($object->toHtml());
 ```
 ### Parse Engine
-   * http://querypath.org/
    * https://github.com/technosophos/querypath
 
 ## Install with Composer
