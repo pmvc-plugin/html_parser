@@ -7,6 +7,17 @@
 Html Parser 
 ===============
 
+## How to use?
+ public function css($content,$selector)
+
+```
+$plug = \PMVC\plug('html_parser');
+$object = $plug->css($html, $your_css_$selector);
+var_dump($object->toHtml());
+```
+### Parse Engine
+   * https://github.com/technosophos/querypath
+
 ## Install with Composer
 ### 1. Download composer
    * mkdir test_folder
@@ -27,7 +38,4 @@ Html Parser
 #### 2.2 Or use composer command-line
    * php composer.phar require pmvc-plugin/hello_world
 
-Parse Engine
-======
-   * http://querypath.org/
-   * https://github.com/technosophos/querypath
+
