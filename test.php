@@ -1,6 +1,6 @@
 <?php
 PMVC\Load::plug();
-PMVC\setPlugInFolder('../');
+PMVC\addPlugInFolders(['../']);
 class HtmlParserTest extends PHPUnit_Framework_TestCase
 {
     function testCssParse()
