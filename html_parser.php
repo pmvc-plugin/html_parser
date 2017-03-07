@@ -26,17 +26,14 @@ class html_parser extends PlugIn
         if (isset($this['fromEncoding'])) {
             $html = mb_convert_encoding($html, 'UTF-8', $this['fromEncoding']);
         }
-        $html5 = $this->_getHtml5Object();
-        $html = $html5->loadHTML($html);
-        return $this->parse($html, $selector, $options);
-    }
-
-    /**
-     * @return QueryPath\DOMQuery
-     * https://github.com/technosophos/querypath/blob/master/src/QueryPath/DOMQuery.php
-     */
-    public function parse($dom, $selector=null, array $options=[])
-    {
-        return new DOMQuery($dom, $selector, $options);
+        if (!is_object($html)) {
+            $html5 = $this->_getHtml5Object();
+            $html = $html5->loadHTML($html);
+        }
+        /**
+         * @return QueryPath\DOMQuery
+         * https://github.com/technosophos/querypath/blob/master/src/QueryPath/DOMQuery.php
+         */
+        return new DOMQuery($html, $selector, $options);
     }
 }
