@@ -13,7 +13,7 @@ class TableToArray
         $colCallback = null
     ) {
         $html = $this->caller;
-        $arr = $html->parse($table, 'tr');
+        $arr = $html->css($table, 'tr');
         if (is_null($start)) {
             $start = 0;
         }
@@ -26,7 +26,7 @@ class TableToArray
         $rows=[];
         for ($row=$start; $row<=$end; $row++) {
             $cols = [];
-            $allTD = $html->parse($arr->get($row), 'td');
+            $allTD = $html->css($arr->get($row), 'td');
             if (is_callable($colCallback)) {
                 foreach($allTD as $col=>$td){
                     $text = trim($td->text());
