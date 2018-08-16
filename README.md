@@ -48,13 +48,13 @@ var_dump($object->html());
 ```
 {
     "require": {
-        "pmvc-plugin/hello_world": "dev-master"
+        "pmvc-plugin/html_parser": "dev-master"
     }
 }
 ```
    * php composer.phar install
 
 #### 2.2 Or use composer command-line
-   * php composer.phar require pmvc-plugin/hello_world
+   * php composer.phar require pmvc-plugin/html_parser
 
 
