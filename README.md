@@ -30,7 +30,7 @@ var_dump($object->html());
 ### Process a list (QueryPath)
 * https://web.archive.org/web/20120504094800/http://api.querypath.org/docs/class_query_path.html
 * Get one index
-   * $DOMElement = QueryPath->get(int index) : start from zero
+   * $DOMElement = QueryPath->get(int index)                  // start from zero
    * \PMVC\plug('html_parser')->css($DOMElement, $selector);
 
 ### Parse Engine
