@@ -59,5 +59,7 @@ var_dump($object->html());
 
 #### 2.2 Or use composer command-line
    * php composer.phar require pmvc-plugin/html_parser
-
+   
+   or
+   * composer require pmvc-plugin/html_parser
 
