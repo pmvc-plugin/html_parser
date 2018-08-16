@@ -8,13 +8,16 @@ Html Parser
 ===============
 
 ## How to use?
- public function css($content,$selector)
+ public function css($content, $selector)
 
 ```
+include('vendor/autoload.php');
+PMVC\Load::plug();
 $plug = \PMVC\plug('html_parser');
 $object = $plug->css($html, $your_css_$selector);
 var_dump($object->html());
 ```
+
 ## Useful tip
 
 ### text or html
